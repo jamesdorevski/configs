@@ -1,4 +1,4 @@
-# ncli
+# cli
 winget install --id Microsoft.dotnet --accept-package-agreements
 winget install --id Microsoft.PowerShell --accept-package-agreements
 winget install --id Git.Git --accept-package-agreements
