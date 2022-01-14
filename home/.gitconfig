@@ -1,0 +1,13 @@
+[user]
+	name = James Dorevski
+
+[core]
+	autocrlf = input
+
+[alias]
+	st = status
+	aa = add .
+	cm = commit
+	pu = push
+	pl = pull
+	rest = restore 
