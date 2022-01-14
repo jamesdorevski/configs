@@ -1,10 +1,10 @@
-# cli
+# CLI
 winget install --id Microsoft.dotnet --accept-package-agreements
 winget install --id Microsoft.PowerShell --accept-package-agreements
 winget install --id Git.Git --accept-package-agreements
 winget install --id Amazon.AWSCLI --accept-package-agreements
 
-# gui
+# GUI
 winget install --id Spotify.Spotify --accept-package-agreements
 winget install --id Google.Chrome --accept-package-agreements
 winget install --id Docker.DockerDesktop --accept-package-agreements
