@@ -1,6 +1,15 @@
-# Aliases 
+# Aliases
 Set-Alias -Name vi -Value nvim
 Set-Alias -Name files -Value explorer
 
-# Enable predictions
+# Enable Starship
+Invoke-Expression (&starship init powershell)
+
+# Modules
+Import-Module -Name Terminal-Icons
+Import-Module PSReadLne
+
+# PsReadLine settings
 Set-PSReadLineOption -PredictionSource History
+Set-PSReadLineOption -PredictionViewStyle ListView
+Set-PSReadLineOption -EditMode Windowsi

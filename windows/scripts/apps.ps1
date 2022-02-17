@@ -21,3 +21,10 @@ winget install --id VideoLAN.VLC --accept-package-agreements
 winget install --id JetBrains.Rider --accept-package-agreements
 winget install --id JetBrains.Datagrip --accept-package-agreements
 winget install --id SlackTechnologies.Slack --accept-package-agreements
+winget install --id LINQPad.LINQPad.7 --accept-package-agreements
+winget install --id Zoom.Zoom --accept-package-agreements
+winget install --id QL-Win.QuickLook --accept-package-agreements
+winget install --id Insomnia.Insomnia --accept-package-agreements
+winget install --id Rufus.Rufus --accept-package-agreements
+winget install --id Bitwarden.Bitwarden --accept-package-agreements
+winget install --id File-New-Project.EarTrumpet --accept-package-agreements
