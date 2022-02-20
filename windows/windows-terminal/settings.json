@@ -126,7 +126,7 @@
             "brightCyan": "#56B6C2",
             "brightGreen": "#98C379",
             "brightPurple": "#C678DD",
-            "brightRed": "#E06C75,
+            "brightRed": "#E06C75",
             "brightWhite": "#DCDFE4",
             "brightYellow": "#E5C07B",
             "cursorColor": "#FFFFFF",
@@ -302,4 +302,4 @@
             "cursorColor": "#c0cad0"
         }
     ]
-}"
+}
