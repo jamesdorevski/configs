@@ -15,7 +15,6 @@ winget install --id Microsoft.WindowsTerminal --accept-package-agreements
 winget install --id Microsoft.VisualStudioCode --accept-package-agreements
 winget install --id Microsoft.PowerToys --accept-package-agreements
 winget install --id voidtools.Everything --accept-package-agreements
-winget install --id Transmission.Transmission --accept-package-agreements
 winget install --id WinDirStat --accept-package-agreements
 winget install --id VideoLAN.VLC --accept-package-agreements
 winget install --id JetBrains.Rider --accept-package-agreements
@@ -26,8 +25,7 @@ winget install --id Zoom.Zoom --accept-package-agreements
 winget install --id QL-Win.QuickLook --accept-package-agreements
 winget install --id Insomnia.Insomnia --accept-package-agreements
 winget install --id Rufus.Rufus --accept-package-agreements
-winget install --id Bitwarden.Bitwarden --accept-package-agreements
-winget install --id File-New-Project.EarTrumpet --accept-package-agreements
 winget install --id Discord.Discord --accept-package-agreements
 winget install --id Insomnia.Insomnia --accept-package-agreements
 winget install --id TheDocumentFoundation.LibreOffice --accept-package-agreements
+winget install --id qBittorrent.qBittorrent --accept-package-agreements
