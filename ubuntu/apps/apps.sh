@@ -4,6 +4,7 @@
 sudo apt -y install git
 sudo apt -y install tmux
 sudo apt -y install neovim
+sudo apt -y install fish
 
 # GUI
 sudo apt -y install vlc
