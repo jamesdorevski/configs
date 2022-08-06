@@ -8,7 +8,7 @@ super + Return
 
 # program launcher
 super + @space
-	rofi -show combi
+	rofi -show run
 
 # make sxhkd reload its configuration files:
 super + Escape
@@ -72,7 +72,7 @@ super + bracket{left,right}
 
 # focus the last node/desktop
 super + {grave,Tab}
-	bspc {node,desktop} -f last
+	rofi -show window
 
 # focus the older or newer node in the focus history
 super + {o,i}
@@ -119,3 +119,15 @@ super + alt + shift + {h,j,k,l}
 # move a floating window
 super + {Left,Down,Up,Right}
 	bspc node -v {-20 0,0 20,0 -20,20 0}
+
+XF86MonBrightnessUp
+	light -A 10
+XF86MonBrightnessDown
+	light -U 10
+
+XF86AudioMute
+	amixer -D pulse sset Master toggle
+XF86AudioLowerVolume
+	amixer -D pulse sset Master 5%-
+XF86AudioRaiseVolume
+	amixer -D pulse sset Master 5%+
