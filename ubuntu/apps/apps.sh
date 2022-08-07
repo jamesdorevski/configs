@@ -12,6 +12,8 @@ sudo apt -y install git \
 	ranger
 
 # GUI
-audo apt -y install vlc \
+sudo apt -y install vlc \
 	transmission \
-	bspwm 
+	bspwm \
+	alacritty \
+	pcmanfm
