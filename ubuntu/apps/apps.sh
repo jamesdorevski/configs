@@ -16,4 +16,5 @@ sudo apt -y install vlc \
 	transmission \
 	bspwm \
 	alacritty \
-	pcmanfm
+	pcmanfm \
+	rofi
