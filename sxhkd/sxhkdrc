@@ -38,6 +38,9 @@ super + y
 super + g
 	bspc node -s biggest
 
+super + shift + Delete
+	xsecurelock
+
 #
 # state/flags
 #
