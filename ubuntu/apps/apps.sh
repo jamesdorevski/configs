@@ -8,7 +8,8 @@ sudo apt -y install git \
 	fzf \
 	redshift \
 	htop \
-	light
+	light \
+	ranger
 
 # GUI
 audo apt -y install vlc \
