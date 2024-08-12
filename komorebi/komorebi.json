@@ -3,9 +3,9 @@
   "app_specific_configuration_path": "$Env:USERPROFILE/applications.yaml",
   "window_hiding_behaviour": "Cloak",
   "cross_monitor_move_behaviour": "Insert",
-  "default_workspace_padding": 5,
-  "default_container_padding": 5,
-  "border": true,
+  "default_workspace_padding": 1,
+  "default_container_padding": 1,
+  "border": false,
   "border_width": 5,
   "border_offset": -1,
   "border_colours": {
@@ -15,13 +15,15 @@
     "unfocused": "#808080"
   },
   "stackbar": {
-    "height": 40,
+    "height": 20,
     "mode": "OnStack",
     "tabs": {
-      "width": 300,
+      "width": 150,
       "focused_text": "#00a542",
       "unfocused_text": "#b3b3b3",
-      "background": "#141414"
+      "background": "#141414",
+      "font_family": "Consolas",
+      "font_size": 18
     }
   },
   "monitors": [
