@@ -17,6 +17,7 @@ return {
 		dependencies = { 'nvim-lua/plenary.nvim' }
 	},
 	{"nvim-treesitter/nvim-treesitter", build = ":TSUpdate"},
-    {"tpope/vim-fugitive"}
+    {"tpope/vim-fugitive"},
+    {"mfussenegger/nvim-dap"}
 }
 
