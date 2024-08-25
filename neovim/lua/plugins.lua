@@ -18,6 +18,6 @@ return {
 	},
 	{"nvim-treesitter/nvim-treesitter", build = ":TSUpdate"},
     {"tpope/vim-fugitive"},
-    {"mfussenegger/nvim-dap"}
+    {"mfussenegger/nvim-dap"},
 }
 
