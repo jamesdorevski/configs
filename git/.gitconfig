@@ -1,8 +1,6 @@
 [user]
 	name = James Dorevski
-
-[core]
-	autocrlf = input
+    email = "james.dorevski@lumachain.io"
 
 [alias]
 	st = status
