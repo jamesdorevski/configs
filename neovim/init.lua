@@ -5,6 +5,7 @@ require("config.telescope")
 require("config.treesitter")
 require("config.fugitive")
 require("config.dap")
+require("config.harpoon")
 
 
 require("config.set")

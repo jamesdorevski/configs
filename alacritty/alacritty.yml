@@ -1,2 +1,4 @@
 font:
-        size: 8
+  normal:
+    family: "Fira Mono"
+

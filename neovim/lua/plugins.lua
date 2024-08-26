@@ -19,5 +19,10 @@ return {
 	{"nvim-treesitter/nvim-treesitter", build = ":TSUpdate"},
     {"tpope/vim-fugitive"},
     {"mfussenegger/nvim-dap"},
+    {
+        "ThePrimeagen/harpoon",
+        branch = "harpoon2",
+        dependencies = { "nvim-lua/plenary.nvim" }
+    }
 }
 
