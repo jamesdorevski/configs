@@ -2,3 +2,16 @@ font:
   normal:
     family: "Hack"
 
+colors:
+  primary:
+    background: "#383838"
+  normal:
+    black: "#242424"
+    green: "#98be65"
+    red: "#f43753"
+    yellow: "#ffc24b"
+    blue: "#b3deef"
+    magenta: "#9876AA"
+    cyan: "#00f1f5"
+    white: "#eeeeee"
+
