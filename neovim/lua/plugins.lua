@@ -1,8 +1,8 @@
 return {
     { 
-        "rebelot/kanagawa.nvim",
+        "xiantang/darcula-dark.nvim",
         init = function()
-            vim.cmd("colorscheme kanagawa")
+            vim.cmd("colorscheme darcula-dark")
         end
     },
     {'VonHeikemen/lsp-zero.nvim', branch = 'v4.x'},
