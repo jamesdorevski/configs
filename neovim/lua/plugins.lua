@@ -32,6 +32,13 @@ return {
             "nvim-lua/plenary.nvim",
             "MunifTanjim/nui.nvim",
         }
+    },
+    {
+        'smoka7/hop.nvim',
+        version = "*",
+        opts = {
+            keys = 'etovxqpdygfblzhckisuran'
+        }
     }
 }
 
