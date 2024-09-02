@@ -6,7 +6,7 @@ require("config.treesitter")
 require("config.fugitive")
 require("config.dap")
 require("config.harpoon")
-
+require("config.neotree")
 
 require("config.set")
 require("config.remap")
