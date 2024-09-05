@@ -49,7 +49,7 @@
             "colorScheme": "JetBrains Darcula",
             "font": 
             {
-                "face": "Monaspace Neon",
+                "face": "MonaspiceNe Nerd Font",
                 "size": 10
             }
         },
@@ -144,7 +144,7 @@
             "brightYellow": "#D3B987",
             "cursorColor": "#FFFFFF",
             "cyan": "#00F1F5",
-            "foreground": "#c9d0d3",
+            "foreground": "#C9D0D3",
             "green": "#AFBF7E",
             "name": "JetBrains Darcula",
             "purple": "#9876AA",

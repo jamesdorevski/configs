@@ -1,0 +1,8 @@
+{
+    "window.commandCenter": 1,
+    "editor.fontFamily": "Monaspace Neon",
+    "editor.lineNumbers": "relative",
+    "[csharp]": {
+        "editor.defaultFormatter": "csharpier.csharpier-vscode"
+    }
+}
