@@ -4,5 +4,8 @@
     "editor.lineNumbers": "relative",
     "[csharp]": {
         "editor.defaultFormatter": "csharpier.csharpier-vscode"
-    }
+    },
+    "extensions.ignoreRecommendations": true,
+    "workbench.colorTheme": "JetBrains Darcula Theme",
+    "git.autofetch": true
 }

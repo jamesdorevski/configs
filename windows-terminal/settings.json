@@ -102,6 +102,14 @@
                 "hidden": false,
                 "name": "Developer PowerShell for VS 2022",
                 "source": "Windows.Terminal.VisualStudio"
+            },
+            {
+                "commandline": "C:\\Program Files\\Git\\bin\\bash.exe",
+                "guid": "{12590de0-c7e5-47b4-a7ca-4eae696d15c1}",
+                "hidden": false,
+                "icon": "C:\\Program Files\\Git\\mingw64\\share\\git\\git-for-windows.ico",
+                "name": "Bash",
+                "startingDirectory": "%USERPROFILE%"
             }
         ]
     },
