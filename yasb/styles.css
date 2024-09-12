@@ -1,93 +1,30 @@
-/*
-.widget .label {} -> Global label for all
-.active-window-widget {} -> Styles specific to the active window widget
-.clock-widget {} -> Styles specific to the clock widget
-.cpu-widget {} -> Styles specific to the CPU widget
-.memory-widget {} -> Styles specific to the memory widget
-.weather-widget {} -> Styles specific to the weather widget
-.komorebi-workspaces {} -> Styles specific to komorebi workspaces
-.komorebi-active-layout {} -> Styles specific to komorebi active layout
-.volume-widget {} -> Styles specific to the volume widget 
-.apps-widget {} -> Styles specific to the apps widget
-.power-menu-widget {} -> Styles for the power menu button widget
-.power-menu-popup {} -> Styles for the power menu popup widget
-.power-menu-popup > .button {} -> Styles for power buttons inside the popup 
-.power-menu-popup > .button > .icon,
-.power-menu-popup > .button > .label {} -> Styles for power buttons icons and labels inside the popup 
-.media-widget {} -> Styles specific to the media widget
-.github-widget {} -> Styles specific to the github widget
-.language-widget {} -> Styles specific to the language widget
-.disk-widget {} -> Styles specific to the disk widget
-.taskbar-widget {} -> Styles specific to the taskbar widget
-*/
 * {
-	font-size: 12px;
+	font-size: 13px;
 	color: #cdd6f4;
-	font-weight: 500;
-	font-family: "JetBrainsMono NFP";
+	font-weight: 600;
+	font-family: "Segoe UI","JetBrainsMono NFP";
 	margin: 0;
 	padding: 0;
 }
 .yasb-bar {
-	padding: 0;
+	padding: 0 8px;
 	margin: 0;
+    background-color: rgba(30, 30, 46, 0.25);
 }
 .widget {
-	background-color: #1e1e2e;
 	padding: 0 8px;
 	margin: 0;
 }
 .widget .label {
-	padding: 1px 2px 1px 2px;
+	padding: 0px 2px 2px 2px;
 }
 .widget .label.alt {
 	padding: 1px 8px 1px 8px;
 }
-.active-window-widget {
-	border-radius: 18px;
-	margin-left: 8px
-}
-.container-left,
-.container-center,
-.container-right {
-	margin: 0;
-	padding: 0;
-}
-
-.clock-widget {
-	border-top-left-radius: 18px;
-	border-bottom-left-radius: 18px;
-}
-
-
-.komorebi-active-layout {
-	border-top-right-radius: 18px;
-	border-bottom-right-radius: 18px;
-	padding: 0 4px 0 0;
-}
-
-.komorebi-active-layout .label {
-	font-weight: 600;
-	padding: 2px 0 0 0;
-}
-.wifi-widget {
-	padding: 0 4px 0 4px;
-	border-top-left-radius: 18px;
-	border-bottom-left-radius: 18px;
-}
-
-.apps-widget .widget-container,
-.komorebi-workspaces .widget-container,
-.wifi-widget .widget-container,
-.komorebi-active-layout .widget-container {
-	background-color: #313244;
-	margin: 4px 0px 4px 0;
-	border-radius: 14px;
-}
-.apps-widget {
-	padding: 0 4px 0 2px;
-	border-top-right-radius: 18px;
-	border-bottom-right-radius: 18px;
+.komorebi-workspaces,
+.komorebi-active-layout  {
+    margin: 0;
+    padding: 0;
 }
 .komorebi-workspaces .ws-btn {
 	font-size: 16px;
@@ -103,15 +40,25 @@
 .komorebi-workspaces .ws-btn.active {
 	color: #c2daf7;
 }
-
+.apps-widget {
+    padding: 0 4px;
+}
+.apps-widget .widget-container {
+    background-color: rgba(255, 255, 255, 0.1);
+    margin: 5px 0 4px 0;
+    border-radius: 13px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+}
 .apps-widget .label {
 	font-size: 14px;
-	padding: 0 2px;
+	padding:0px 2px 1px 2px;
 }
 .apps-widget .label:hover {
 	color: #fff;
 }
-
+.active-window-widget .icon {
+    padding: 0 0 0 0;
+}
 /*POWER MENU WIDGET*/
 .uptime {
 	font-size: 14px;
@@ -177,61 +124,7 @@
 	color: #89b4fa;
 	margin: 1px 2px 0 0;
 }
-.cpu-widget .icon,
-.memory-widget .icon {
-	font-size: 14px;
-	color: #cba6f7;
-	margin: 0 2px 1px 0;
-}
-.memory-widget .icon {
-	color: #a6c9f7;
-}
-.wifi-widget .icon {
-	color: #43d8d8;
-	padding: 0 7px;
-	margin: 0;
-}
-
-/* Memory widget usage colors. Uncomment if you want to color of the battery widget icon to change based on status */
-
-/*
-.memory-widget.status-low .icon {
-  color: #a6e3a1;
-}
-.memory-widget.status-medium .icon {
-  color: #f9e2af;
-}
-.memory-widget.status-high .icon {
-  color: #fab387;
-}
-.memory-widget.status-critical .icon {
-  color: #f38ba8;
-}
-*/
-
-/* Battery widget value colors. Uncomment if you want to color of the battery widget icon to change based on status */
-
-/*
-.battery-widget.status-charging .icon {
-  color: #74c7ec;
-}
-.battery-widget.status-full .icon {
-  color: #94e2d5;
-}
-.battery-widget.status-high .icon {
-  color: #a6e3a1;
-}
-.battery-widget.status-medium .icon {
-  color: #f9e2af;
-}
-.battery-widget.status-low .icon {
-  color: #fab387;
-}
-.battery-widget.status-critical .icon {
-  color: #f38ba8;
-}
-*/
-
+ 
 /* WEATHER WIDGET */
 .weather-widget .icon {
 	font-size: 16px;
@@ -245,17 +138,6 @@
 	font-size: 22px;
 	margin: 1px 2px 0px 0;
 }
-/* 
-.weather-widget .icon.cloudyDay {}
-.weather-widget .icon.cloudyNight {} 
-.weather-widget .icon.rainyDay {} 
-.weather-widget .icon.rainyNight {} 
-.weather-widget .icon.snowyIcyDay {} 
-.weather-widget .icon.snowyIcyNight {} 
-.weather-widget .icon.blizzard {} 
-.weather-widget .icon.default {}
-*/
-
 
 /* MEDIA WIDGET */
 .media-widget {
@@ -272,34 +154,24 @@
 	color: #acb2c9;
 	padding: 0 3px;
 	margin: 4px 0;
+    font-weight: 500;
 	font-family: Segoe Fluent Icons;
 }
 .media-widget .btn:hover {
-	color: #89b4fa;
+	color: #ffffff;
 }
 .media-widget .btn.play {
-	background-color: #313244;
+	background-color: rgba(255, 255, 255, 0.1);
 	border-radius: 14px;
 	font-size: 16px;
 }
 .media-widget .btn.disabled:hover,
 .media-widget .btn.disabled {
-	color: #4e525c;
+	color: #7d8297;
 	font-size: 12px;
 	background-color: rgba(0, 0, 0, 0);
 }
 
-/* GITHUB WIDGET */
-.github-widget {
-    padding:0 4px;
-}
-.github-widget .icon {
-    font-size: 14px;
-	color: #cdd6f4
-}
-.github-widget .icon.new-notification {
-    color: #f38ba8;
-}
 /* TASBAR WIDGET */
 .taskbar-widget {
     padding: 0;
@@ -307,4 +179,7 @@
 }
 .taskbar-widget .app-icon {
     padding:0 6px;
+}
+.win-button-widget .label {
+    font-size: 18px;
 }
