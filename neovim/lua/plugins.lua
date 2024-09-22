@@ -1,5 +1,10 @@
 return {
-    {'talha-akram/noctis.nvim' },
+    { 
+        'talha-akram/noctis.nvim',
+        init = function()
+            vim.cmd("colorscheme noctis_lux")
+        end 
+    },
     {'VonHeikemen/lsp-zero.nvim', branch = 'v4.x'},
     {'williamboman/mason.nvim'},
     {'williamboman/mason-lspconfig.nvim'},
