@@ -1,5 +1,10 @@
 {
     "window.titleBarStyle": "native",
     "editor.fontFamily": "Monaspace Argon",
-    "editor.lineNumbers": "relative"
+    "editor.lineNumbers": "relative",
+    "cSpell.userWords": [
+        "Organisations"
+    ],
+    "workbench.colorTheme": "Noctis",
+    "editor.minimap.enabled": true
 }

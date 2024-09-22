@@ -1,38 +1,29 @@
 [font.normal]
 family = "Monaspace Argon"
 
+# Default colors
 [colors.primary]
-background = '#1f1f28'
-foreground = '#dcd7ba'
+background = '#fef8ec'
+foreground = '#005661'
 
+# Normal colors
 [colors.normal]
-black   = '#090618'
-red     = '#c34043'
-green   = '#76946a'
-yellow  = '#c0a36e'
-blue    = '#7e9cd8'
-magenta = '#957fb8'
-cyan    = '#6a9589'
-white   = '#c8c093'
+black = '#003b42'
+red = '#e34e1c'
+green = '#00b368'
+yellow = '#f49725'
+blue = '#0094f0'
+magenta = '#ff5792'
+cyan = '#00bdd6'
+white = '#8ca6a6'
 
+# Bright colors
 [colors.bright]
-black   = '#727169'
-red     = '#e82424'
-green   = '#98bb6c'
-yellow  = '#e6c384'
-blue    = '#7fb4ca'
-magenta = '#938aa9'
-cyan    = '#7aa89f'
-white   = '#dcd7ba'
-
-[colors.selection]
-background = '#2d4f67'
-foreground = '#c8c093'
-
-[[colors.indexed_colors]]
-index = 16
-color = '#ffa066'
-
-[[colors.indexed_colors]]
-index = 17
-color = '#ff5d62'
+black = '#004d57'
+red = '#ff4000'
+green = '#00d17a'
+yellow = '#ff8c00'
+blue = '#0fa3ff'
+magenta = '#ff6b9f'
+cyan = '#00cbe6'
+white = '#bbc3c4'
