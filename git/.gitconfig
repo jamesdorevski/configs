@@ -9,3 +9,5 @@
 	pu = push
 	pl = pull
 	rest = restore 
+[push]
+	autoSetupRemote = true
