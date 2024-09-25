@@ -11,3 +11,5 @@
 	rest = restore 
 [push]
 	autoSetupRemote = true
+[pull]
+	rebase = false

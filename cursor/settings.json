@@ -3,8 +3,11 @@
     "editor.fontFamily": "Monaspace Argon",
     "editor.lineNumbers": "relative",
     "cSpell.userWords": [
+        "Organisation",
         "Organisations"
     ],
-    "workbench.colorTheme": "Noctis Lux",
-    "editor.minimap.enabled": true
+    "workbench.colorTheme": "Noctis Uva",
+    "[csharp]": {
+        "editor.defaultFormatter": "csharpier.csharpier-vscode"
+    }
 }
