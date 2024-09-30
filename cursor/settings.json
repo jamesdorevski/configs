@@ -1,13 +1,15 @@
 {
     "window.titleBarStyle": "native",
-    "editor.fontFamily": "Monaspace Argon",
+    "editor.fontFamily": "Monaspace Neon",
     "editor.lineNumbers": "relative",
     "cSpell.userWords": [
         "Organisation",
         "Organisations"
     ],
-    "workbench.colorTheme": "Noctis Uva",
     "[csharp]": {
         "editor.defaultFormatter": "csharpier.csharpier-vscode"
-    }
+    },
+    "cursor.chat.showSuggestedFiles": true,
+    "vim.leader": "<space>",
+    "workbench.colorTheme": "Noctis Bordo"
 }

@@ -1,29 +1,26 @@
 [font.normal]
-family = "MonaspiceArNerdFont"
+family = "Monaspace Neon"
 
-# Default colors
 [colors.primary]
-background = '#fef8ec'
-foreground = '#005661'
+background = "#1F1F1F"
+foreground = "#CCCCCC"
 
-# Normal colors
 [colors.normal]
-black = '#003b42'
-red = '#e34e1c'
-green = '#00b368'
-yellow = '#f49725'
-blue = '#0094f0'
-magenta = '#ff5792'
-cyan = '#00bdd6'
-white = '#8ca6a6'
+black   = "#000000"
+red     = "#d6181b"
+green   = "#6A9955"
+yellow  = "#e4d201"
+blue    = "#569cd6"
+magenta = "#bc3fbc"
+cyan    = "#4EC9B0"
+white   = "#e5e5e5"
 
-# Bright colors
 [colors.bright]
-black = '#004d57'
-red = '#ff4000'
-green = '#00d17a'
-yellow = '#ff8c00'
-blue = '#0fa3ff'
-magenta = '#ff6b9f'
-cyan = '#00cbe6'
-white = '#bbc3c4'
+black   = "#666666"
+red     = "#ce9178"
+green   = "#b5cea8"
+yellow  = "#DCDCAA"
+blue    = "#9cdcfe"
+magenta = "#d670d6"
+cyan    = "#9cdcfe"
+white   = "#e5e5e5"
