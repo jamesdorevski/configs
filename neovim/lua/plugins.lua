@@ -2,7 +2,7 @@ return {
     { 
         'talha-akram/noctis.nvim',
         init = function()
-            vim.cmd("colorscheme noctis")
+            vim.cmd("colorscheme noctis_bordo")
         end 
     },
     {'VonHeikemen/lsp-zero.nvim', branch = 'v4.x'},
