@@ -1,9 +1,3 @@
-# Set up the prompt
-
-autoload -Uz promptinit
-promptinit
-prompt adam1
-
 setopt histignorealldups sharehistory
 
 # Use emacs keybindings even if our EDITOR is set to vi
@@ -36,10 +30,9 @@ zstyle ':completion:*' verbose true
 zstyle ':completion:*:*:kill:*:processes' list-colors '=(#b) #([0-9]#)*=0=01;31'
 zstyle ':completion:*:kill:*' command 'ps -u $USER -o pid,%cpu,tty,cputime,cmd'
 
-export DOTNET_ROOT=$HOME/.dotnet
-export PATH=$PATH:$DOTNET_ROOT:$DOTNET_ROOT/tools
 export PATH=$PATH:/opt/nvim/bin
 
 alias vi=nvim
 
 eval "$(jump shell)"
+eval "$(starship init zsh)"
