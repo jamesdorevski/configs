@@ -10,19 +10,10 @@
 					"PackageIdentifier" : "CoreyButler.NVMforWindows"
 				},
 				{
-					"PackageIdentifier" : "7zip.7zip"
-				},
-				{
-					"PackageIdentifier" : "Docker.DockerDesktop"
-				},
-				{
 					"PackageIdentifier" : "Git.Git"
 				},
 				{
 					"PackageIdentifier" : "HermannSchinagl.LinkShellExtension"
-				},
-				{
-					"PackageIdentifier" : "Microsoft.VSTOR"
 				},
 				{
 					"PackageIdentifier" : "Notepad++.Notepad++"
@@ -31,25 +22,10 @@
 					"PackageIdentifier" : "TablePlus.TablePlus"
 				},
 				{
-					"PackageIdentifier" : "LGUG2Z.whkd"
-				},
-				{
-					"PackageIdentifier" : "Microsoft.VCRedist.2010.x64"
-				},
-				{
-					"PackageIdentifier" : "LGUG2Z.komorebi"
-				},
-				{
 					"PackageIdentifier" : "Neovim.Neovim"
 				},
 				{
-					"PackageIdentifier" : "Google.GoogleDrive"
-				},
-				{
 					"PackageIdentifier" : "voidtools.Everything"
-				},
-				{
-					"PackageIdentifier" : "VideoLAN.VLC"
 				},
 				{
 					"PackageIdentifier" : "Microsoft.AzureCLI"
@@ -61,70 +37,19 @@
 					"PackageIdentifier" : "Microsoft.Azure.CosmosEmulator"
 				},
 				{
-					"PackageIdentifier" : "JetBrains.Rider"
-				},
-				{
 					"PackageIdentifier" : "Kubernetes.minikube"
-				},
-				{
-					"PackageIdentifier" : "Microsoft.Edge"
-				},
-				{
-					"PackageIdentifier" : "Microsoft.EdgeWebView2Runtime"
-				},
-				{
-					"PackageIdentifier" : "Valve.Steam"
-				},
-				{
-					"PackageIdentifier" : "Microsoft.VisualStudio.2022.BuildTools"
-				},
-				{
-					"PackageIdentifier" : "qBittorrent.qBittorrent"
-				},
-				{
-					"PackageIdentifier" : "WinSCP.WinSCP"
-				},
-				{
-					"PackageIdentifier" : "Microsoft.DotNet.Runtime.6"
-				},
-				{
-					"PackageIdentifier" : "Microsoft.VCRedist.2012.x86"
 				},
 				{
 					"PackageIdentifier" : "Microsoft.DotNet.SDK.7"
 				},
 				{
-					"PackageIdentifier" : "Microsoft.VCRedist.2015+.x86"
-				},
-				{
-					"PackageIdentifier" : "Microsoft.DotNet.SDK.5"
-				},
-				{
-					"PackageIdentifier" : "Microsoft.VCRedist.2015+.x64"
-				},
-				{
 					"PackageIdentifier" : "Microsoft.DotNet.SDK.6"
-				},
-				{
-					"PackageIdentifier" : "Microsoft.VCRedist.2010.x86"
-				},
-				{
-					"PackageIdentifier" : "Python.Launcher"
 				},
 				{
 					"PackageIdentifier" : "Microsoft.DotNet.SDK.8"
 				},
 				{
-					"PackageIdentifier" : "Microsoft.VCRedist.2012.x64"
-				},
-				{
-					"PackageIdentifier" : "Microsoft.DotNet.SDK.3_1"
-				},
-				{
 					"PackageIdentifier" : "Bruno.Bruno"
-				},
-				{
-					"PackageIdentifier" : "Anysphere.Cursor"
 				},
 				{
 					"PackageIdentifier" : "BurntSushi.ripgrep.MSVC"
@@ -139,34 +64,10 @@
 					"PackageIdentifier" : "Microsoft.NuGet"
 				},
 				{
-					"PackageIdentifier" : "Microsoft.Sysinternals.ZoomIt"
-				},
-				{
-					"PackageIdentifier" : "JanDeDobbeleer.OhMyPosh"
-				},
-				{
-					"PackageIdentifier" : "PrismLauncher.PrismLauncher"
-				},
-				{
-					"PackageIdentifier" : "Rustlang.Rustup"
-				},
-				{
-					"PackageIdentifier" : "Spotify.Spotify"
-				},
-				{
 					"PackageIdentifier" : "WinDirStat.WinDirStat"
 				},
 				{
-					"PackageIdentifier" : "WinMerge.WinMerge"
-				},
-				{
 					"PackageIdentifier" : "Obsidian.Obsidian"
-				},
-				{
-					"PackageIdentifier" : "JetBrains.dotTrace"
-				},
-				{
-					"PackageIdentifier" : "Python.Python.3.12"
 				},
 				{
 					"PackageIdentifier" : "Microsoft.Azure.StorageExplorer"
@@ -179,18 +80,6 @@
 				},
 				{
 					"PackageIdentifier" : "Microsoft.Teams"
-				},
-				{
-					"PackageIdentifier" : "Microsoft.AppInstaller"
-				},
-				{
-					"PackageIdentifier" : "Microsoft.UI.Xaml.2.7"
-				},
-				{
-					"PackageIdentifier" : "Microsoft.UI.Xaml.2.8"
-				},
-				{
-					"PackageIdentifier" : "Microsoft.VCLibs.Desktop.14"
 				},
 				{
 					"PackageIdentifier" : "Microsoft.DevHome"
