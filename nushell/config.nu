@@ -901,3 +901,4 @@ source ~/.zoxide.nu
 use ~/.cache/starship/init.nu
 
 alias cd = z
+alias vi = nvim
