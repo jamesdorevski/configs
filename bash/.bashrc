@@ -23,3 +23,7 @@ if [ -d ~/.bashrc.d ]; then
     done
 fi
 unset rc
+
+eval "$(zoxide init bash)"
+
+alias cd=z
