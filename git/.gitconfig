@@ -1,6 +1,6 @@
 [user]
 	name = James Dorevski
-    email = "james@jamesdorevski.com"
+    	email = "jdorevski@me.com"
 
 [alias]
 	st = status
@@ -13,3 +13,5 @@
 	autoSetupRemote = true
 [pull]
 	rebase = false
+[credential]
+	helper = osxkeychain
