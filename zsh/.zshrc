@@ -11,3 +11,5 @@ eval "$(zoxide init zsh)"
 eval "$(/opt/homebrew/bin/brew shellenv)"
 
 [ -s "$HOMEBREW_PREFIX/opt/jabba/jabba.sh" ] && . "$HOMEBREW_PREFIX/opt/jabba/jabba.sh"
+
+eval "$(starship init zsh)"
