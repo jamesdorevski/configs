@@ -18,6 +18,11 @@ eval "$(/opt/homebrew/bin/brew shellenv)"
 # Starship
 eval "$(starship init zsh)"
 
+# NVM
+export NVM_DIR="$HOME/.nvm"
+[ -s "/opt/homebrew/opt/nvm/nvm.sh" ] && \. "/opt/homebrew/opt/nvm/nvm.sh"  # This loads nvm
+[ -s "/opt/homebrew/opt/nvm/etc/bash_completion.d/nvm" ] && \. "/opt/homebrew/opt/nvm/etc/bash_completion.d/nvm"  # This loads nvm bash_completion
+
 # ZSH plugins
 source /opt/homebrew/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 source $(brew --prefix)/share/zsh-autosuggestions/zsh-autosuggestions.zsh
@@ -25,3 +30,4 @@ source $(brew --prefix)/share/zsh-history-substring-search/zsh-history-substring
 
 bindkey '^[[A' history-substring-search-up
 bindkey '^[[B' history-substring-search-down
+eval "$(/Users/james/.local/bin/mise activate zsh)"
