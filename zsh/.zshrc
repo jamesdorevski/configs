@@ -1,6 +1,11 @@
 # dotnet
 export PATH=$PATH:$HOME/.dotnet
 export DOTNET_ROOT=$HOME/.dotnet
+export PATH=$PATH:$DOTNET_ROOT/tools
+
+# dotnet x64
+export PATH=$PATH:$HOME/.dotnet64
+alias dotnet64=$HOME/.dotnet64/dotnet
 
 # Pyenv
 export PYENV_ROOT=$HOME/.pyenv
