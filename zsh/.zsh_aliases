@@ -1,0 +1,4 @@
+alias ll='ls -la'
+alias gs='git status'
+alias vi='nvim'
+alias dn='dotnet'
