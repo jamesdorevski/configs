@@ -1,5 +1,5 @@
-# Source aliases
 [ -f ~/.zsh_aliases ] && source ~/.zsh_aliases
+[ -f ~/.zsh_secrets ] && source ~/.zsh_secrets
 
 # dotnet
 export PATH=$PATH:$HOME/.dotnet
@@ -39,3 +39,4 @@ source $(brew --prefix)/share/zsh-history-substring-search/zsh-history-substring
 bindkey '^[[A' history-substring-search-up
 bindkey '^[[B' history-substring-search-down
 eval "$(/Users/james/.local/bin/mise activate zsh)"
+
