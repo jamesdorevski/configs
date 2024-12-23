@@ -7,6 +7,7 @@ require("config.dap")
 require("config.neotree")
 require("config.hop")
 require("config.telescope")
+require("config.conform")
 
 require("config.set")
 require("config.remap")
