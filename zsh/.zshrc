@@ -31,6 +31,9 @@ eval "$(pyenv init -)"
 alias cd=z
 eval "$(zoxide init zsh)"
 
+# bin directory
+export PATH=$PATH:$HOME/bin/dmt
+
 # ZSH plugins
 source /opt/homebrew/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 source $(brew --prefix)/share/zsh-autosuggestions/zsh-autosuggestions.zsh
