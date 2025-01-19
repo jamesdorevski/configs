@@ -14,8 +14,11 @@ alias dotnet64=$HOME/.dotnet64/dotnet
 eval "$(/opt/homebrew/bin/brew shellenv)"
 [ -s "$HOMEBREW_PREFIX/opt/jabba/jabba.sh" ] && . "$HOMEBREW_PREFIX/opt/jabba/jabba.sh"
 
-## Add libpq to PATH
+# Add libpq to PATH
 export PATH="/opt/homebrew/opt/libpq/bin:$PATH"
+
+# Prefer GNU coreutils over macOS default
+export PATH="/opt/homebrew/opt/coreutils/libexec/gnubin:$PATH"
 
 # NVM
 export NVM_DIR="$HOME/.nvm"
