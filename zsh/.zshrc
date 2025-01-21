@@ -1,6 +1,9 @@
 [ -f ~/.zsh_aliases ] && source ~/.zsh_aliases
 [ -f ~/.zsh_secrets ] && source ~/.zsh_secrets
 
+# colima 
+export DOCKER_HOST=$(docker context inspect -f '{{ .Endpoints.docker.Host }}')
+
 # dotnet
 export PATH=$PATH:$HOME/.dotnet
 export DOTNET_ROOT=$HOME/.dotnet
