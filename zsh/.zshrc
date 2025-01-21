@@ -1,9 +1,6 @@
 [ -f ~/.zsh_aliases ] && source ~/.zsh_aliases
 [ -f ~/.zsh_secrets ] && source ~/.zsh_secrets
 
-# colima 
-export DOCKER_HOST=$(docker context inspect -f '{{ .Endpoints.docker.Host }}')
-
 # dotnet
 export PATH=$PATH:$HOME/.dotnet
 export DOTNET_ROOT=$HOME/.dotnet
@@ -16,6 +13,9 @@ alias dotnet64=$HOME/.dotnet64/dotnet
 # Homebrew
 eval "$(/opt/homebrew/bin/brew shellenv)"
 [ -s "$HOMEBREW_PREFIX/opt/jabba/jabba.sh" ] && . "$HOMEBREW_PREFIX/opt/jabba/jabba.sh"
+
+# Configure DOCKER_HOST env var for colima 
+export DOCKER_HOST=$(docker context inspect -f '{{ .Endpoints.docker.Host }}')
 
 # Add libpq to PATH
 export PATH="/opt/homebrew/opt/libpq/bin:$PATH"
