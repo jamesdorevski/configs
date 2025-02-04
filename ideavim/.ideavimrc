@@ -5,7 +5,7 @@
 "" ========================================================
 
 set scrolloff=10
-set linenumber
+set relativenumber
 set showmode
 set showcmd
 
@@ -166,7 +166,7 @@ map <leader>df <action>(ToggleFullScreen)
 
 " Actions
 map <leader>am <action>(ShowIntentionActions)
-map <leader>as <action>(SearchEverywhere)
+map <leader>lg <action>(SearchEverywhere)
 
 " File navigation
 map <leader>ff <action>(GotoFile)

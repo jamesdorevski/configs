@@ -52,3 +52,6 @@ eval "$(/Users/james/.local/bin/mise activate zsh)"
 # powerlevel10k
 source /opt/homebrew/share/powerlevel10k/powerlevel10k.zsh-theme
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
+
+# Added by LM Studio CLI (lms)
+export PATH="$PATH:/Users/james/.lmstudio/bin"
