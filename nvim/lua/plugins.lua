@@ -1,8 +1,8 @@
 return {
     {
-        'rebelot/kanagawa.nvim',
+        'loctvl842/monokai-pro.nvim',
         init = function() 
-            vim.cmd("colorscheme kanagawa")
+            vim.cmd("colorscheme monokai-pro")
         end
     },
     {'VonHeikemen/lsp-zero.nvim', branch = 'v4.x'},
