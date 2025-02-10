@@ -1,0 +1,15 @@
+{
+  "editor.lineNumbers": "relative",
+  "editor.fontFamily": "IBM Plex Mono",
+  "diffEditor.hideUnchangedRegions.enabled": true,
+  "[csharp]": {
+    "editor.defaultFormatter": "csharpier.csharpier-vscode"
+  },
+  "go.toolsManagement.autoUpdate": true,
+  "workbench.colorTheme": "gruvboxConcoctis dark hard",
+  "csharpier.enableDiagnostics": false,
+  "cSpell.userWords": [
+    "organisation"
+  ],
+  "github.copilot.nextEditSuggestions.enabled": true
+}
