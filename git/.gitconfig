@@ -9,6 +9,7 @@
 	pu = push
 	pl = pull
 	rest = restore 
+    diff = diff --color-words
 [push]
 	autoSetupRemote = true
 [pull]
