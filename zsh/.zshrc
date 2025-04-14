@@ -33,6 +33,10 @@ export PYENV_ROOT=$HOME/.pyenv
 [[ -d $PYENV_ROOT/bin ]] && export PATH="$PYENV_ROOT/bin:$PATH"
 eval "$(pyenv init -)"
 
+# jenv
+export PATH="$HOME/.jenv/bin:$PATH"
+eval "$(jenv init -)"
+
 # Zoxide
 alias cd=z
 eval "$(zoxide init zsh)"
@@ -52,9 +56,6 @@ eval "$(/Users/james/.local/bin/mise activate zsh)"
 # powerlevel10k
 source /opt/homebrew/share/powerlevel10k/powerlevel10k.zsh-theme
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
-
-# Added by LM Studio CLI (lms)
-export PATH="$PATH:/Users/james/.lmstudio/bin"
 
 # ZSH Vi mode
 source $(brew --prefix)/opt/zsh-vi-mode/share/zsh-vi-mode/zsh-vi-mode.plugin.zsh
