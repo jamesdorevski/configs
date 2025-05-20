@@ -15,7 +15,7 @@ eval "$(/opt/homebrew/bin/brew shellenv)"
 [ -s "$HOMEBREW_PREFIX/opt/jabba/jabba.sh" ] && . "$HOMEBREW_PREFIX/opt/jabba/jabba.sh"
 
 # Configure DOCKER_HOST env var for colima 
-export DOCKER_HOST=$(docker context inspect -f '{{ .Endpoints.docker.Host }}')
+#export DOCKER_HOST=$(docker context inspect -f '{{ .Endpoints.docker.Host }}')
 
 # Add libpq to PATH
 export PATH="/opt/homebrew/opt/libpq/bin:$PATH"
@@ -58,3 +58,8 @@ source $(brew --prefix)/opt/zsh-vi-mode/share/zsh-vi-mode/zsh-vi-mode.plugin.zsh
 
 # Starship
 eval "$(starship init zsh)"
+# The following lines have been added by Docker Desktop to enable Docker CLI completions.
+fpath=(/Users/james/.docker/completions $fpath)
+autoload -Uz compinit
+compinit
+# End of Docker CLI completions
