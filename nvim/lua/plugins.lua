@@ -1,8 +1,13 @@
 return {
     {
-      'loctvl842/monokai-pro.nvim',
+      'sainnhe/gruvbox-material',
+      lazy = false,
+      priority = 1000,
       config = function()
-        vim.cmd.colorscheme('monokai-pro')
+        -- Optionally configure and load the colorscheme
+        -- directly inside the plugin declaration.
+        vim.g.gruvbox_material_enable_italic = true
+        vim.cmd.colorscheme('gruvbox-material')
       end
     },
     {'VonHeikemen/lsp-zero.nvim', branch = 'v4.x'},
