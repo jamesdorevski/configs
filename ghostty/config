@@ -1,2 +1,3 @@
 font-family = "Berkeley Mono"
 font-style = "Regular"
+theme = "gruvbox-material"
