@@ -63,3 +63,12 @@ fpath=(/Users/james/.docker/completions $fpath)
 autoload -Uz compinit
 compinit
 # End of Docker CLI completions
+
+# Added by LM Studio CLI (lms)
+export PATH="$PATH:/Users/james/.lmstudio/bin"
+# End of LM Studio CLI section
+
+
+[[ "$TERM_PROGRAM" == "kiro" ]] && . "$(kiro --locate-shell-integration-path zsh)"
+
+alias claude="/Users/james/.claude/local/claude"

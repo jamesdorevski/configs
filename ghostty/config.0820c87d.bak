@@ -1,4 +1,3 @@
 font-family = "Berkeley Mono"
 font-style = "Regular"
 theme = "GruvboxDark"
-keybind = shift+enter=text:\n
