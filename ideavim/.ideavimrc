@@ -145,6 +145,7 @@ map <leader>c <action>(CommentByLineComment)
 
 " Jump around with easymotion
 map <leader>j <Plug>(easymotion-s)
+map <leader>f <Plug>(easymotion-f)
 
 " Open NERDTree (use q to exit)
 map <leader>pv :NERDTreeToggle<CR>
