@@ -42,6 +42,13 @@ return {
     {
         'stevearc/conform.nvim',
         opts = {},
-    }
+    },
+    { 'f-person/git-blame.nvim' },
+    { 'sindrets/diffview.nvim' },
+    {
+        'numToStr/Comment.nvim',
+        opts = {}
+    },
+    { 'ThePrimeagen/harpoon' }
 }
 

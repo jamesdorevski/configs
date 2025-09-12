@@ -28,7 +28,15 @@ require('mason').setup({})
 require('mason-lspconfig').setup({
   handlers = {
     function(server_name)
+      vim.notify("Setting up " .. server_name)
       require('lspconfig')[server_name].setup({})
+    end,
+
+    ['csharp_ls'] = function()
+      require('lspconfig').csharp_ls.setup({
+        cmd = { 'csharp-ls' },
+        root_dir = require('lspconfig').util.root_pattern('*.sln', '*.csproj', '.git'),
+      })
     end,
   },
 })
