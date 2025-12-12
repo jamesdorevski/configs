@@ -1,21 +1,9 @@
 require("conform").setup({
   formatters_by_ft = {
-    c_sharp = { "csharpier" }
-  },
-  format_on_save = {
-    lsp_format = "fallback",
-    timeout_ms = 500,
+    cs = { "csharpier" }
   },
   notify_no_formatters = true,
   notify_on_error = true,
-})
-
--- Format on save
-vim.api.nvim_create_autocmd("BufWritePre", {
-  pattern = "*",
-  callback = function(args)
-    require("conform").format({ bufnr = args.buf })
-  end,
 })
 
 -- Define command to run formatting

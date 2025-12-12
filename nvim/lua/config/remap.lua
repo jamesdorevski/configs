@@ -37,7 +37,8 @@ end)
 
 -- Better tab experience
 vim.keymap.set("n", "<leader>tn", "<cmd>tabnew<CR>")
-vim.keymap.set("n", "<leader>t<leader>", "<cmd>tabnext<CR>")
+vim.keymap.set("n", "<leader>tl", "<cmd>+tabnext<CR>")
+vim.keymap.set("n", "<leader>tr", "<cmd>-tabnext<CR>")
 vim.keymap.set("n", "<leader>tm", "<cmdtabmove<CR>")
 vim.keymap.set("n", "<leader>tc", "<cmd>tabclose<CR>")
 vim.keymap.set("n", "<leader>to", "<cmd>tabonly<CR>")

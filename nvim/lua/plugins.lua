@@ -10,6 +10,14 @@ return {
             require('bamboo').load()
         end,
     },
+    {
+        "seblyng/roslyn.nvim",
+        ---@module 'roslyn.config'
+        ---@type RoslynNvimConfig
+        opts = {
+            -- your configuration comes here; leave empty for default settings
+        },
+    },
     {'VonHeikemen/lsp-zero.nvim', branch = 'v4.x'},
     {'williamboman/mason.nvim'},
     {'williamboman/mason-lspconfig.nvim'},
@@ -42,6 +50,9 @@ return {
     {
         'stevearc/conform.nvim',
         opts = {},
-    }
+    },
+    { 'f-person/git-blame.nvim' },
+    { 'sindrets/diffview.nvim' },
+    { 'ThePrimeagen/harpoon' }
 }
 

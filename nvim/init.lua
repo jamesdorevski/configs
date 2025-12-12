@@ -8,6 +8,8 @@ require("config.neotree")
 require("config.hop")
 require("config.telescope")
 require("config.conform")
+require("config.git-blame")
+require("config.diffview")
 
 require("config.set")
 require("config.remap")
