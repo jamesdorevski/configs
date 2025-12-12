@@ -10,7 +10,6 @@ require("config.telescope")
 require("config.conform")
 require("config.git-blame")
 require("config.diffview")
-require("config.Commentary")
 
 require("config.set")
 require("config.remap")
