@@ -1,0 +1,44 @@
+# Rider Dark (JetBrains) ported to Ghostty
+# Source: https://github.com/JetBrains/rider-theme-pack RiderDark.theme.json
+# The JetBrains file is a UI theme (no ANSI colors); the palette below is
+# mapped from Rider's accent colors (icons.ColorPalette / iconColorsOnSelection)
+# and UI color table, on Rider Dark's editor/console background.
+
+background=#2b2b2b
+foreground=#c0c0c6
+cursor-color=#cdd0d7
+cursor-text=#2b2b2b
+selection-background=#354f85
+selection-foreground=#eeeeee
+
+# black
+palette = 0=#242424
+palette = 8=#6a6a70
+
+# red
+palette = 1=#ba574e
+palette = 9=#ff9794
+
+# green
+palette = 2=#669653
+palette = 10=#62b543
+
+# yellow
+palette = 3=#d9b72b
+palette = 11=#edba68
+
+# blue
+palette = 4=#6786c7
+palette = 12=#5f94ff
+
+# magenta
+palette = 5=#a36aa2
+palette = 13=#b99bf8
+
+# cyan
+palette = 6=#40b6e0
+palette = 14=#61eded
+
+# white
+palette = 7=#c0c0c6
+palette = 15=#eeeeee
