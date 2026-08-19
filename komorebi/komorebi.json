@@ -18,7 +18,11 @@
         { "name": "1", "layout": "RightMainVerticalStack" },
         { "name": "2", "layout": "RightMainVerticalStack" },
         { "name": "3", "layout": "RightMainVerticalStack" },
-        { "name": "4", "layout": "RightMainVerticalStack" }
+        { "name": "4", "layout": "RightMainVerticalStack" },
+        { "name": "5", "layout": "RightMainVerticalStack" },
+        { "name": "6", "layout": "RightMainVerticalStack" },
+        { "name": "7", "layout": "RightMainVerticalStack" },
+        { "name": "8", "layout": "RightMainVerticalStack" }
       ]
     },
     {
@@ -26,7 +30,11 @@
         { "name": "1", "layout": "RightMainVerticalStack" },
         { "name": "2", "layout": "RightMainVerticalStack" },
         { "name": "3", "layout": "RightMainVerticalStack" },
-        { "name": "4", "layout": "RightMainVerticalStack" }
+        { "name": "4", "layout": "RightMainVerticalStack" },
+        { "name": "5", "layout": "RightMainVerticalStack" },
+        { "name": "6", "layout": "RightMainVerticalStack" },
+        { "name": "7", "layout": "RightMainVerticalStack" },
+        { "name": "8", "layout": "RightMainVerticalStack" }
       ]
     }
   ]
