@@ -47,40 +47,22 @@ if (Test-Path $configsPath) {
 Enable-ArgumentCompleters
 #endregion
 
-#region Aliases
-Set-Alias -Name which -Value Get-Command
-Set-Alias -Name grep  -Value Select-String
-Set-Alias -Name touch -Value New-Item
+#region Aliases (bash-style shims in .\Aliases.ps1)
+$aliasesPath = Join-Path $PSScriptRoot 'Aliases.ps1'
+if (Test-Path $aliasesPath) {
+    . $aliasesPath
+}
 #endregion
 
 #region Navigation
-function ..   { Set-Location .. }
-function ...  { Set-Location ../.. }
-function .... { Set-Location ../../.. }
-
 function New-DirectoryAndEnter {
     param([string]$Path)
     New-Item -ItemType Directory -Path $Path -Force | Out-Null
     Set-Location $Path
 }
-Set-Alias -Name mkcd -Value New-DirectoryAndEnter
 #endregion
 
 #region Git
-function g    { git @args }
-function ga   { git add @args }
-function gc   { git commit -m @args }
-function gd   { git diff @args }
-function gds  { git diff --staged @args }
-function gaa  { git add . }
-function gph  { git push @args }
-function gpl  { git pull @args }
-function gs   { git status @args }
-function gsw  { git switch @args }
-function gst  { git stash @args }
-function gstp { git stash pop @args }
-function gra  { git restore . }
-
 function glr {
     $tag = git rev-list --tags --max-count=1 --skip=2 --no-walk
     if (-not $tag) {
@@ -108,7 +90,6 @@ function Get-SystemInfo {
     Write-Host "Uptime: $((Get-Uptime).ToString())"
     Write-Host ""
 }
-Set-Alias -Name sysinfo -Value Get-SystemInfo
 
 function Extract-Archive {
     param([string]$Path)
@@ -124,15 +105,32 @@ function Extract-Archive {
         Write-Host "File not found: $Path" -ForegroundColor Red
     }
 }
-Set-Alias -Name extract -Value Extract-Archive
 #endregion
 
 #region External Tools
-function npp { & "C:\Program Files\Notepad++\notepad++.exe" $args }
-
 # Zoxide
 Invoke-Expression (& { (zoxide init powershell | Out-String) })
 
 # vfox
 Invoke-Expression "$(vfox activate pwsh)"
+#endregion
+
+# coreutils
+
+## Remove pwsh aliases
+$coreutils = @(
+    'arch','b2sum','base32','base64','basename','basenc','cat','cksum','comm','cp',
+    'csplit','cut','date','df','dirname','du','echo','env','expr','factor',
+    'false','find','fmt','fold','grep','head','hostname','join','link','ln',
+    'ls','md5sum','mkdir','mktemp','mv','nl','nproc','numfmt','od','paste',
+    'pathchk','pr','printenv','printf','ptx','pwd','readlink','realpath','rm','rmdir',
+    'seq','sha1sum','sha224sum','sha256sum','sha384sum','sha512sum','shuf','sleep','sort','split',
+    'stat','sum','tac','tail','tee','test','touch','tr','true','truncate',
+    'tsort','unexpand','uniq','unlink','uptime','wc','xargs','yes'
+)
+
+foreach ($name in $coreutils) {
+    if (Test-Path "Alias:$name")    { Remove-Item "Alias:$name" -Force }
+    if (Test-Path "Function:$name") { Remove-Item "Function:$name" -Force }
+}
 #endregion
