@@ -4,20 +4,11 @@ return {
         lazy = false,
         priority = 1000,
         config = function()
-            require('bamboo').setup {
-                -- optional configuration here
-            }
             require('bamboo').load()
         end,
     },
-    {
-        "seblyng/roslyn.nvim",
-        ---@module 'roslyn.config'
-        ---@type RoslynNvimConfig
-        opts = {
-            -- your configuration comes here; leave empty for default settings
-        },
-    },
+    {"seblyng/roslyn.nvim"},
+    {'numToStr/Comment.nvim'},
     {'VonHeikemen/lsp-zero.nvim', branch = 'v4.x'},
     {'williamboman/mason.nvim'},
     {'williamboman/mason-lspconfig.nvim'},
@@ -47,10 +38,7 @@ return {
         'nvim-telescope/telescope.nvim', tag = '0.1.8',
         dependencies = { 'nvim-lua/plenary.nvim' }
     },
-    {
-        'stevearc/conform.nvim',
-        opts = {},
-    },
+    {'stevearc/conform.nvim'},
     { 'f-person/git-blame.nvim' },
     { 'sindrets/diffview.nvim' },
     { 'ThePrimeagen/harpoon' }

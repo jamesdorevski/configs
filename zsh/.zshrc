@@ -71,4 +71,5 @@ export PATH="$PATH:/Users/james/.lmstudio/bin"
 
 [[ "$TERM_PROGRAM" == "kiro" ]] && . "$(kiro --locate-shell-integration-path zsh)"
 
-alias claude="/Users/james/.claude/local/claude"
+# OpenClaw Completion
+[ -f "/Users/james/.openclaw/completions/openclaw.zsh" ] && source "/Users/james/.openclaw/completions/openclaw.zsh"
