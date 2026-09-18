@@ -90,7 +90,7 @@
   "ui_font_size": 15,
   "buffer_font_size": 13,
   "theme": {
-    "mode": "dark",
+    "mode": "light",
     "light": "Bamboo Light",
     "dark": "Bamboo Vulgaris"
   },
