@@ -206,3 +206,157 @@ map <leader>gb <Action>(Git.Branches)
 map <leader>en <Action>(ReSharperGotoNextErrorInSolution)
 map <leader>ep <Action>(ReSharperGotoPrevErrorInSolution)
 
+
+"" ========================================================
+"" Enhanced Configuration - Added December 2024
+"" ========================================================
+
+"" Additional Plugins
+"" ========================================================
+set commentary       " gcc to comment line, gc to comment motion
+set ReplaceWithRegister  " gr{motion} to replace with register
+set exchange         " cx{motion} to exchange, cxx for line, X in visual
+set textobj-entire   " ae/ie for entire buffer
+set argtextobj       " aa/ia for arguments, daa to delete arg
+set multiple-cursors " <C-n> for next occurrence
+set matchit          " % to jump between matching brackets/tags
+set quickscope       " Highlight jump targets
+
+" Configure argtextobj to handle more bracket types
+let g:argtextobj_pairs="[:],(:),<:>"
+
+" Configure quickscope to highlight on specific keys
+let g:qs_highlight_on_keys = ['f', 'F', 't', 'T']
+
+
+"" Multiple Cursors Remapping
+"" ========================================================
+" Remap multiple-cursors to match vim-multiple-cursors plugin
+nmap <C-n> <Plug>NextWholeOccurrence
+xmap <C-n> <Plug>NextWholeOccurrence
+nmap g<C-n> <Plug>NextOccurrence
+xmap g<C-n> <Plug>NextOccurrence
+xmap <C-x> <Plug>SkipOccurrence
+xmap <C-p> <Plug>RemoveOccurrence
+
+
+"" Enhanced Settings
+"" ========================================================
+set ideajoin         " Use IDE's join/J command for better formatting
+set idearefactormode=keep  " Keep mode when refactoring
+set ideamarks        " Sync marks with IDE bookmarks
+set number           " Show line numbers (better than relativenumber for SQL)
+
+
+"" Text Object Improvements
+"" ========================================================
+" Better paragraph navigation
+map <leader>{ <Action>(EditorCodeBlockStart)
+map <leader>} <Action>(EditorCodeBlockEnd)
+
+" Select entire function/method
+map vaf <Action>(EditorSelectWord)<Action>(EditorUnSelectWord)<Action>(MethodUp)<Action>(VimVisualToggleBlockMode)<Action>(MethodDown)
+
+
+"" Database & SQL Navigation (DataGrip Compatible)
+"" ========================================================
+let g:WhichKeyDesc_database = "<leader>s SQL/Database"
+let g:WhichKeyDesc_database_execute = "<leader>se Execute statement"
+let g:WhichKeyDesc_database_execute_new = "<leader>sn Execute in new tab"
+let g:WhichKeyDesc_database_console = "<leader>sc Open console"
+let g:WhichKeyDesc_database_history = "<leader>sh Query history"
+
+map <leader>se <Action>(ExecuteStatement)
+map <leader>sn <Action>(ExecuteInNewConsole)
+map <leader>sc <Action>(DatabaseView.OpenDdlInConsole)
+map <leader>sh <Action>(Console.History.Browse)
+
+
+"" Run & Debug Actions (Cross-IDE Compatible)
+"" ========================================================
+let g:WhichKeyDesc_run = "<leader>R Run/Debug"
+let g:WhichKeyDesc_run_run = "<leader>Rr Run"
+let g:WhichKeyDesc_run_debug = "<leader>Rd Debug"
+let g:WhichKeyDesc_run_stop = "<leader>Rs Stop"
+let g:WhichKeyDesc_run_config = "<leader>Rc Edit configurations"
+
+map <leader>Rr <Action>(Run)
+map <leader>Rd <Action>(Debug)
+map <leader>Rs <Action>(Stop)
+map <leader>Rc <Action>(editRunConfigurations)
+
+
+"" Code Navigation Enhancements
+"" ========================================================
+let g:WhichKeyDesc_peek = "<leader>p Peek/Preview"
+let g:WhichKeyDesc_peek_definition = "<leader>pd Peek definition"
+let g:WhichKeyDesc_peek_implementation = "<leader>pi Peek implementation"
+let g:WhichKeyDesc_peek_usages = "<leader>pu Peek usages"
+let g:WhichKeyDesc_peek_documentation = "<leader>ph Show documentation"
+
+map <leader>pd <Action>(QuickImplementations)
+map <leader>pi <Action>(QuickImplementations)
+map <leader>pu <Action>(ShowUsages)
+map <leader>ph <Action>(QuickJavaDoc)
+
+
+"" Better Search & Replace
+"" ========================================================
+let g:WhichKeyDesc_search_replace = "<leader>S Search/Replace"
+let g:WhichKeyDesc_search_replace_file = "<leader>Sr Replace in file"
+let g:WhichKeyDesc_search_replace_project = "<leader>Sp Replace in project"
+let g:WhichKeyDesc_search_everywhere = "<leader>Se Search everywhere"
+
+map <leader>Sr <Action>(Replace)
+map <leader>Sp <Action>(ReplaceInPath)
+map <leader>Se <Action>(SearchEverywhere)
+
+" Clear search highlighting with escape
+nnoremap <Esc> :nohlsearch<CR>
+
+
+"" Terminal & Tool Windows
+"" ========================================================
+let g:WhichKeyDesc_terminal = "<leader>t Terminal/Tools"
+let g:WhichKeyDesc_terminal_open = "<leader>tt Open terminal"
+let g:WhichKeyDesc_terminal_database = "<leader>td Database tool"
+let g:WhichKeyDesc_terminal_git = "<leader>tg Git tool"
+let g:WhichKeyDesc_terminal_structure = "<leader>ts Structure view"
+
+map <leader>tt <Action>(ActivateTerminalToolWindow)
+map <leader>td <Action>(ActivateDatabaseToolWindow)
+map <leader>tg <Action>(ActivateVersionControlToolWindow)
+map <leader>ts <Action>(ActivateStructureToolWindow)
+
+
+"" Bookmarks & Marks Enhancement
+"" ========================================================
+let g:WhichKeyDesc_bookmark = "<leader>b Bookmarks"
+let g:WhichKeyDesc_bookmark_toggle = "<leader>bt Toggle bookmark"
+let g:WhichKeyDesc_bookmark_list = "<leader>bl List bookmarks"
+let g:WhichKeyDesc_bookmark_next = "<leader>bn Next bookmark"
+let g:WhichKeyDesc_bookmark_prev = "<leader>bp Previous bookmark"
+
+map <leader>bt <Action>(ToggleBookmark)
+map <leader>bl <Action>(ShowBookmarks)
+map <leader>bn <Action>(GotoNextBookmark)
+map <leader>bp <Action>(GotoPreviousBookmark)
+
+
+"" Quick Actions
+"" ========================================================
+" Quick fix with Alt+Enter (matches IDE default)
+map <A-CR> <Action>(ShowIntentionActions)
+
+" Format selection or file
+"vnoremap = <Action>(ReformatCode)
+"nnoremap == <Action>(ReformatCode)
+
+" Expand/Collapse code blocks
+map zM <Action>(CollapseAllRegions)
+map zR <Action>(ExpandAllRegions)
+map za <Action>(ExpandCollapseToggleAction)
+
+" Smart completion
+imap <C-Space> <Action>(CodeCompletion)
+imap <C-S-Space> <Action>(SmartTypeCompletion)

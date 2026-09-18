@@ -1,0 +1,61 @@
+[
+  {
+    "context": "VimControl && !menu",
+    "bindings": {
+      "f3": "editor::Format",
+      "ctrl-b": "workspace::ToggleLeftDock"
+    }
+  },
+  {
+    "context": "vim_mode == normal && !menu",
+    "bindings": {
+      "shift-q": null,
+      "ctrl-k": "editor::GoToDiagnostic",
+      "ctrl-j": "editor::GoToPreviousDiagnostic",
+
+      "space p v": "pane::RevealInProjectPanel",
+      "space f": "editor::Format",
+      "space s": "buffer_search::DeployReplace",
+      "space h": "vim::HelixJumpToWord",
+      "space .": "editor::ToggleCodeActions",
+      "space d": "editor::Hover",
+      "space g s": "git_panel::ToggleFocus",
+
+      "space f f": "file_finder::Toggle",
+      "space f b": "tab_switcher::Toggle",
+      "space l g": "pane::DeploySearch",
+      "space r g": "workspace::ReopenLastPicker",
+
+      "space t n": "workspace::NewFile",
+      "space t l": "pane::ActivateNextItem",
+      "space t r": "pane::ActivatePreviousItem",
+      "space t c": "pane::CloseActiveItem",
+      "space t o": ["pane::CloseOtherItems", { "close_pinned": false }],
+
+      "g i": "editor::GoToImplementation",
+      "g o": "editor::GoToTypeDefinition",
+      "g s": "editor::ShowSignatureHelp",
+      "g r": "editor::FindAllReferences",
+      "f2": "editor::Rename",
+
+      "f5": "debugger::Continue",
+      "f10": "debugger::StepOver",
+      "f11": "debugger::StepInto",
+      "f12": "debugger::StepOut",
+      "space b": "editor::ToggleBreakpoint",
+      "space l p": "editor::EditLogBreakpoint"
+    }
+  },
+  {
+    "context": "vim_mode == visual && !menu",
+    "bindings": {
+      "shift-j": "editor::MoveLineDown",
+      "shift-k": "editor::MoveLineUp"
+    }
+  },
+  {
+    "bindings": {
+      "shift shift": "command_palette::Toggle"
+    }
+  }
+]
