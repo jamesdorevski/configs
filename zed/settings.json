@@ -7,8 +7,25 @@
 // custom settings, run `zed: open default settings` from the
 // command palette (cmd-shift-p / ctrl-shift-p)
 {
+  "buffer_font_weight": 600.0,
+  "scroll_beyond_last_line": "vertical_scroll_margin",
+  "which_key": {
+    "delay_ms": 300,
+    "enabled": true,
+  },
+  "reveal_if_open": true,
+  "on_new_window": "empty_tab",
+  "ui_font_family": "Atkinson Hyperlegible Next",
+  "buffer_line_height": "standard",
+  "terminal": {
+    "font_weight": 600.0,
+    "font_size": 14.0
+  },
   "disable_ai": true,
   "markdown_preview": {
+    "font_size": 15.0,
+    "code_font_family": "Berkeley Mono",
+    "font_family": "Atkinson Hyperlegible Next",
     "limit_content_width": true,
     "max_width": 1200.0
   },
@@ -52,11 +69,12 @@
     "tree_view": true
   },
   "icon_theme": {
-    "mode": "dark",
+    "mode": "light",
     "light": "Zed (Default)",
     "dark": "Zed (Default)"
   },
   "agent": {
+    "sidebar_side": "right",
     "show_turn_stats": true,
     "dock": "right",
     "favorite_models": [],
@@ -83,12 +101,15 @@
     "line_numbers": true
   },
   "minimap": {
+    "current_line_highlight": "all",
+    "thumb_border": "left_open",
+    "thumb": "always",
     "show": "always"
   },
   "buffer_font_family": "Berkeley Mono",
   "cli_default_open_behavior": "existing_window",
-  "ui_font_size": 15,
-  "buffer_font_size": 13,
+  "ui_font_size": 16.0,
+  "buffer_font_size": 14,
   "theme": {
     "mode": "light",
     "light": "Bamboo Light",
