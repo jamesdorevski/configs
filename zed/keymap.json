@@ -58,5 +58,18 @@
     "bindings": {
       "shift shift": "command_palette::Toggle"
     }
+  },
+  {
+    "context": "ProjectSearchBar > Editor",
+    "bindings": {
+      "tab": "project_search::ToggleFocus"
+    }
+  },
+  {
+    "context": "ProjectSearchView > Editor",
+    "bindings": {
+      "tab": "search::SelectNextMatch",
+      "shift-tab": "search::SelectPreviousMatch"
+    }
   }
 ]

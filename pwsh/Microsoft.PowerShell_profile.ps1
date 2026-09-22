@@ -47,13 +47,6 @@ if (Test-Path $configsPath) {
 Enable-ArgumentCompleters
 #endregion
 
-#region Aliases (bash-style shims in .\Aliases.ps1)
-$aliasesPath = Join-Path $PSScriptRoot 'Aliases.ps1'
-if (Test-Path $aliasesPath) {
-    . $aliasesPath
-}
-#endregion
-
 #region Navigation
 function New-DirectoryAndEnter {
     param([string]$Path)
@@ -126,11 +119,18 @@ $coreutils = @(
     'pathchk','pr','printenv','printf','ptx','pwd','readlink','realpath','rm','rmdir',
     'seq','sha1sum','sha224sum','sha256sum','sha384sum','sha512sum','shuf','sleep','sort','split',
     'stat','sum','tac','tail','tee','test','touch','tr','true','truncate',
-    'tsort','unexpand','uniq','unlink','uptime','wc','xargs','yes'
+    'tsort','unexpand','uniq','unlink','uptime','wc','xargs','yes', 'gc'
 )
 
 foreach ($name in $coreutils) {
     if (Test-Path "Alias:$name")    { Remove-Item "Alias:$name" -Force }
     if (Test-Path "Function:$name") { Remove-Item "Function:$name" -Force }
+}
+#endregion
+
+#region Aliases
+$aliasesPath = Join-Path $PSScriptRoot 'Aliases.ps1'
+if (Test-Path $aliasesPath) {
+    . $aliasesPath
 }
 #endregion

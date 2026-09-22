@@ -14,7 +14,7 @@ function l  { ls -CF @args }
 #region Git
 function g    { git @args }
 function ga   { git add @args }
-function gcm  { git commit -m @args }
+function gc   { git commit -m @args }
 function gd   { git diff @args }
 function gds  { git diff --staged @args }
 function gaa  { git add . }
@@ -22,8 +22,8 @@ function gph  { git push @args }
 function gpl  { git pull @args }
 function gs   { git status @args }
 function gsw  { git switch @args }
-function gst  { git stash @args }
-function gstp { git stash pop @args }
+function gst  { git stash push --include-untracked }
+function gstp { git stash pop }
 function gra  { git restore . }
 
 function worktree {
