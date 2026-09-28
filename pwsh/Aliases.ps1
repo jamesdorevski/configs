@@ -90,6 +90,10 @@ Set-Alias -Name sysinfo -Value Get-SystemInfo
 Set-Alias -Name extract -Value Extract-Archive
 #endregion
 
+#region winget
+function u { sudo winget update --all }
+#endregion
+
 #region External Tools
 function npp { & "C:\Program Files\Notepad++\notepad++.exe" $args }
 #endregion

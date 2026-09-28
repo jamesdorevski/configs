@@ -11,6 +11,8 @@
     "bindings": {
       "space": null,
       "shift-q": null,
+      "shift-escape": null,
+
       "ctrl-k": "editor::GoToDiagnostic",
       "ctrl-j": "editor::GoToPreviousDiagnostic",
 
