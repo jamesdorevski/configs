@@ -36,7 +36,8 @@
       "space t o": ["pane::CloseOtherItems", { "close_pinned": false }],
 
       "g i": "editor::GoToImplementation",
-      "g d": "editor::GoToTypeDefinition",
+      "g d": "editor::GoToDefinition",
+      "g y": "editor::GoToTypeDefinition",
       "g s": "editor::ShowSignatureHelp",
       "g r": "editor::FindAllReferences",
       "f2": "editor::Rename",
