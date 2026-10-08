@@ -38,8 +38,9 @@ set surround
 set highlightedyank
 set sneak
 set NERDTree
+set which-key
+set notimeout
 
-" Easymotion settings
 set easymotion
 
 "" Key mappings
@@ -128,6 +129,7 @@ map <leader>to <Action>(CloseAllEditorsButActive)
 " Git windows
 map <leader>gs <Action>(ActivateCommitToolWindow)
 map <leader>gvc <Action>(ActivateVersionControlToolWindow)
+map g<leader> <Action>(EditSource)
 
 " Errors
 map <leader>en <Action>(ReSharperGotoNextErrorInSolution)

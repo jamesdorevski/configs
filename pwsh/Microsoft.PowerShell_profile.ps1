@@ -1,10 +1,12 @@
 # PowerShell Profile (CurrentUserCurrentHost)
 
 #region Environment
-$PSDefaultParameterValues['*:Encoding'] = 'utf8'
-[console]::InputEncoding  = [System.Text.UTF8Encoding]::new()
-[console]::OutputEncoding = [System.Text.UTF8Encoding]::new()
-$ErrorView = 'ConciseView'
+
+$envVarsPath = Join-Path $PSScriptRoot 'EnvironmentVariables.ps1'
+if (Test-Path $envVarsPath) {
+    . $envVarsPath
+}
+
 #endregion
 
 #region Styling
