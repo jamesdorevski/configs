@@ -16,7 +16,7 @@ _zsh_plugin() {
   return 1
 }
 
-_zsh_plugin zsh-syntax-highlighting && source $REPLY
+#_zsh_plugin zsh-syntax-highlighting && source $REPLY
 _zsh_plugin zsh-autosuggestions && source $REPLY
-_zsh_plugin zsh-history-substring-search && source $REPLY
+#_zsh_plugin zsh-history-substring-search && source $REPLY
 _zsh_plugin zsh-vi-mode && source $REPLY
