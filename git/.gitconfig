@@ -1,7 +1,24 @@
 [user]
 	name = James Dorevski
-	email = jdorevski@me.com
 [push]
 	autoSetupRemote = true
 [pull]
 	rebase = false
+[rerere]
+	enabled = true
+[alias]
+	a = add
+	aa = add .
+	c = commit -m
+	d = diff
+	ds = diff --staged
+	ph = push
+	pl = pull
+	s = status
+	sw = switch
+	st = stash push --include-untracked
+	stp = stash pop
+	ra = restore .
+	lr = "!f() { tag=$(git rev-list --tags --max-count=1 --skip=2 --no-walk); if [ -z \"$tag\" ]; then echo 'Fewer than 3 tags in this repo' >&2; return 1; fi; git log \"$tag..HEAD\" --format='%Cred%h%Creset - %s %Cgreen(%as) %C(bold blue)<%an>%Creset'; }; f"
+[include]
+	path = ~/.gitconfig.local

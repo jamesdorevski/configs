@@ -1,0 +1,2 @@
+export PATH="$HOME/.jenv/bin:$PATH"
+(( $+commands[jenv] )) && eval "$(jenv init -)"

@@ -1,0 +1,11 @@
+[user]
+	email = james.dorevski@creditprotect.com.au
+[core]
+	autocrlf = true
+	fscache = true
+	symlinks = true
+[http]
+	sslBackend = schannel
+[credential]
+	helper =
+	helper = C:/Users/JamesDorevski/AppData/Local/Programs/Git\\ Credential\\ Manager/git-credential-manager.exe
