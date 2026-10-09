@@ -7,6 +7,11 @@
 // custom settings, run `zed: open default settings` from the
 // command palette (cmd-shift-p / ctrl-shift-p)
 {
+  "dap": {
+      "netcoredbg": {
+          "binary": "/home/james/bin/netcoredbg/netcoredbg"
+      }
+  },
   "soft_wrap": "none",
   "buffer_font_weight": 600.0,
   "scroll_beyond_last_line": "vertical_scroll_margin",
@@ -105,7 +110,7 @@
     "current_line_highlight": "all",
     "thumb_border": "left_open",
     "thumb": "always",
-    "show": "always"
+    "show": "never"
   },
   "buffer_font_family": "Berkeley Mono",
   "cli_default_open_behavior": "new_window",
