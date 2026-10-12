@@ -1,0 +1,46 @@
+_pd_confirm() {
+  printf '%s [y/N] ' "$1"
+  read -r _pd_reply
+  case "$_pd_reply" in [yY]|[yY][eE][sS]) return 0 ;; *) return 1 ;; esac
+}
+
+alias pdps='podman ps -a --format "table {{.ID}} {{.Names}} {{.Status}} {{.Image}} {{.Ports}}"'
+alias pdi='podman images'
+alias pdv='podman volume ls'
+alias pdn='podman network ls'
+alias pdpods='podman pod ps'
+alias pddf='podman system df'          # disk usage by type
+alias pdstats='podman stats --no-stream'
+
+# --- Stop ---
+pdstop() { podman stop -a; }           # graceful: SIGTERM, then SIGKILL after 10s
+
+# --- Remove (destructive) ---
+# Pods must go first: infra containers can't be removed while their pod exists.
+pdrmpods() { _pd_confirm "Remove ALL pods (and their containers)?" && podman pod rm -a -f; }
+
+# -v also removes anonymous volumes attached to each container.
+pdrmc()   { _pd_confirm "Remove ALL containers?" && podman pod rm -a -f && podman rm -a -f -v; }
+
+pdrmi()   { _pd_confirm "Remove ALL images?"     && podman rmi -a -f; }
+
+# Named volumes hold persistent data (DBs etc.) — this is the most dangerous one.
+pdrmv()   { _pd_confirm "Remove ALL volumes (data loss)?" && podman volume rm -a -f; }
+
+# Default 'podman' network is never removed; only user-created, unused ones.
+pdrmn()   { _pd_confirm "Remove unused networks?" && podman network prune -f; }
+
+# --- Prune (removes only unused/dangling) ---
+pdprune()  { podman system prune -f; }                 # stopped containers, dangling images, unused networks, build cache
+pdprunea() { _pd_confirm "Prune ALL unused images and volumes?" && podman system prune -a -f --volumes; }
+
+# --- Nuke: everything, in dependency order ---
+pdnuke() {
+  _pd_confirm "Remove ALL pods, containers, images, volumes and networks?" || return 1
+  podman pod rm -a -f
+  podman rm -a -f -v
+  podman system prune -a -f --volumes
+}
+
+# --- Last resort: wipe Podman storage entirely (e.g. corrupted storage, broken migration) ---
+pdreset() { _pd_confirm "RESET Podman storage to factory state?" && podman system reset -f; }
