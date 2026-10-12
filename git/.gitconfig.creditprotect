@@ -1,0 +1,14 @@
+[user]
+	email = james.dorevski@creditprotect.com.au
+[core]
+	autocrlf = true
+	fscache = true
+	symlinks = true
+[http]
+	sslBackend = schannel
+[credential "https://github.com"]
+	helper =
+	helper = !gh auth git-credential
+[credential "https://gist.github.com"]
+	helper =
+	helper = !gh auth git-credential
