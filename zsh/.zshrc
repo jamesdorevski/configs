@@ -21,6 +21,7 @@ source $_zsh_dir/.zsh_yarn
 
 for f in $_zsh_dir/functions/*.zsh(N); do source $f; done
 
+source $_zsh_dir/.zsh_vars
 source $_zsh_dir/.zsh_aliases
 source $_zsh_dir/.zsh_podman
 
